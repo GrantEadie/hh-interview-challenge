@@ -34,3 +34,29 @@ body {
   margin-top: 40px;
   margin-right: 40px;
 }
+
+.swatch-container {
+  height: 180px;
+  width: 150px;
+  border-radius: 10px;
+  border: 2px solid rgb(181, 181, 181);
+  margin: 20px;
+}
+
+.swatch-color {
+  height: 150px;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+
+.swatch-container p {
+  color: grey;
+  margin-left: 10px;
+}
+
+.main-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+

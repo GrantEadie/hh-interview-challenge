@@ -4,7 +4,7 @@ export default function Swatch(props) {
   return (
     <>
     <div className="swatch-container">
-      <div className="swatch-color"></div>
+      <div className="swatch-color" style={{background: hexCode}}></div>
       <p>{hexCode}</p>
     </div>
     </>

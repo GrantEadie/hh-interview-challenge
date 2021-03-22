@@ -1,9 +1,16 @@
-import Swatch from "./Swatch"
+import Swatch from "./Swatch";
 
 export default function Main() {
   return (
     <>
-    <Swatch hexCode="#cffff1"/>
+      <div className="main-grid-container">
+        <Swatch hexCode="#cffff1" />
+        <Swatch hexCode="#cffff1" />
+        <Swatch hexCode="#cffff1" />
+        <Swatch hexCode="#cffff1" />
+        <Swatch hexCode="#cffff1" />
+        <Swatch hexCode="#cffff1" />
+      </div>
     </>
-  )
+  );
 }
