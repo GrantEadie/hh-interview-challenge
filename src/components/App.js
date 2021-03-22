@@ -1,14 +1,15 @@
-import Header from "./Header"
-import Sidebar from "./Sidebar"
+import Header from "./Header";
+import Sidebar from "./Sidebar";
+import Main from "./Main";
 
 function App() {
   return (
     <>
-    <Sidebar/>
-    <Header/>
-    <p>
-      hello
-    </p>
+      <Sidebar />
+      <Header />
+      <div className="main-container">
+        <Main/>
+      </div>
     </>
   );
 }

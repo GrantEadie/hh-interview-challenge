@@ -28,3 +28,9 @@ body {
 .btn-outline-dark {
   background: white;
 }
+
+.main-container {
+  margin-left: 220px;
+  margin-top: 40px;
+  margin-right: 40px;
+}
