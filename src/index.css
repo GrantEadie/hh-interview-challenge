@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700;900&display=swap');
+
+body {
+  font-family: 'Source Serif Pro', serif;
+}
+
 .form-control {
   border-radius: 6px;
+}
+
+.side-bar-container {
+  height: 100%;
+  width: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 80px;
+}
+
+.side-bar-container * {
+  margin: 15px;
+  
+}
+
+.btn-outline-dark {
+  background: white;
 }
