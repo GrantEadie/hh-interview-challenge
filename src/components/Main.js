@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Swatch from "./Swatch";
-import Pagination from "./Pagination"
+import Pagination from "./Pagination";
 
 export default function Main() {
   const [colors, setColors] = useState([]);
   const [loading, setLoading] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
-  const [colorsPerPage] = useState(30);
+  const [colorsPerPage] = useState(10);
 
   const getData = () => {
     setLoading(true);
@@ -37,8 +37,8 @@ export default function Main() {
   const currentColors = colors.slice(indexOfFirstColor, indexOfLastColor);
 
   const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber)
-  }
+    setCurrentPage(pageNumber);
+  };
 
   if (loading) {
     return (
@@ -53,9 +53,14 @@ export default function Main() {
           {currentColors.map((color, index) => (
             <Swatch hexCode={color.hex} key={index} />
           ))}
-
-          <Pagination colorsPerPage={colorsPerPage} totalColors={colors.length} paginate={paginate}/>
         </div>
+          <div className="page-container">
+            <Pagination
+              colorsPerPage={colorsPerPage}
+              totalColors={colors.length}
+              paginate={paginate}
+            />
+          </div>
       </>
     );
   }
