@@ -115,3 +115,12 @@ body {
   border-bottom: 1px solid black !important;
   border-radius: 0px !important;
 }
+
+.side-bar-container p {
+  border-bottom: 1px solid transparent;
+}
+
+.side-bar-container p:hover {
+  cursor: pointer;
+  border-bottom: 1px solid grey;
+}
