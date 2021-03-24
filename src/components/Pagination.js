@@ -63,10 +63,9 @@ export default function Pagination(props) {
   };
 
   const pages = fetchPageNumbers();
-  console.log(pages)
 
   const goToPage = page => {
-    const currentPage = Math.max(0, Math.min(page, totalColors/colorsPerPage));
+    const currentPage = Math.max(0, Math.min(page, Math.ceil(totalColors/colorsPerPage)));
     setCurrentPage(currentPage)
   }
 
@@ -116,7 +115,7 @@ export default function Pagination(props) {
                 </li>
               );
             return (
-              <li key={index} className="page-item">
+              <li key={index} className={`page-item${ currentPage === number ? ' active' : ''}`}>
                 <a
                   onClick={() => handleClick(number)}
                   href="!#"

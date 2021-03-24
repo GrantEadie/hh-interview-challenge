@@ -4,7 +4,7 @@ import HHLogo from "../assets/hh-logo";
 function Header() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light bg-dark justify-content-between">
+      <nav className="navbar navbar-expand-lg navbar-light bg-dark justify-content-between sticky-top">
         <div className="mr-auto my-2">
           <HHLogo fill="white" />
         </div>

@@ -1,9 +1,9 @@
 export default function Swatch(props) {
 
-  const { hexCode } = props
+  const { hexCode, handleSwatchClick } = props
   return (
     <>
-    <div className="swatch-container">
+    <div onClick={handleSwatchClick} className="swatch-container">
       <div className="swatch-color" style={{background: hexCode}}></div>
       <p>{hexCode}</p>
     </div>
